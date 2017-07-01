@@ -1,0 +1,38 @@
+body{
+  padding-top: 10px;
+}
+
+/* SIDEBAR */
+.sidebar{
+  float: left !important;
+  width: 60px;
+  margin-left: 15px;
+  margin-right: 20px;
+
+}
+
+.sidebar .li {
+  float: left;
+  padding: 2px;
+
+}
+
+
+/* HOMEMATIC DEVICES*/
+.devicename{
+  border: 1px transparent solid;
+  padding: 5px;
+  background-color: 
+}
+
+.devicecontrol{
+
+
+
+}
+
+
+/* FONT */
+h3, h4{
+  margin:0px;
+}
