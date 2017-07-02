@@ -1,0 +1,127 @@
+body{
+  padding-top: 10px;
+  background-color: #212121;
+}
+
+/* SIDEBAR */
+.sidebar{
+  float: left !important;
+  width: 60px;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.sidebar li {
+  float: left;
+  border: 1px transparent solid;
+}
+
+.sidebar ul{
+background-color: transparent;
+}
+
+/* TOP NAVIGATION FOR XS*/
+#navigation ul li span{
+  margin-left: 10px;
+
+}
+
+#navigation ul li{
+  padding: 2px;
+  border: 1px transparent solid;
+}
+
+.hidden-lg nav{
+  margin-bottom: 0px;
+  background-color: #5b5b5b;
+  color: black;
+}
+
+.navbar-default .navbar-brand{
+  color: black;
+}
+
+
+
+/* NAVIGATION */
+.navbar-default{
+  background-color: transparent;
+  border-color: transparent;
+
+}
+.navbar-default .navbar-nav > li > a{
+  background-color: #5b5b5b;
+  color: black;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+  background-color: #393939;
+  color: white;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+  background-color: #393939;
+  color: white;
+}
+
+
+
+
+/* HOMEMATIC DEVICES*/
+div[data-toggle]{
+  cursor: pointer;
+
+}
+.device{
+  background-color: rgb(91, 91, 91);
+  display: block;
+  padding: 10px;
+  min-height: 63px;
+
+}
+
+.devicename{
+  border: 1px transparent solid;
+  margin: 5px;
+  background-color: #5b5b5b;
+  color: #FFFFFF;
+}
+
+.devicename img{
+    margin-right: 5px;
+}
+
+.devicename h3{
+  padding: 2px;
+  color: #FFFFFF;
+}
+
+.devicename h3 small{
+  color: #FFFFFF;
+}
+
+.devicestatus{
+  margin: 5px;
+
+}
+
+.devicecontrol{
+
+
+
+}
+
+
+/* FONT */
+h3, h4{
+  margin:0px;
+  color: #000000;
+}
+
+h3 small, h4 small{
+  color: #000000;
+
+}
