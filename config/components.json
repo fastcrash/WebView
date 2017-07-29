@@ -1,0 +1,10 @@
+{
+  "Zimmer": {
+    "ise_id": "1234",
+    "display_name": "Wohnzimmer",
+    "datapoints": [
+      "3456",
+      "7890"
+    ]
+  }
+}

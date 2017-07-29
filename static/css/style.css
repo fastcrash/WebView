@@ -44,6 +44,11 @@ background-color: transparent;
 
 
 /* NAVIGATION */
+.nav-divider{
+  height: 20px;
+  background-color: transparent;
+}
+
 .navbar-default{
   background-color: transparent;
   border-color: transparent;
@@ -81,6 +86,7 @@ div[data-toggle]{
   padding: 10px;
   min-height: 63px;
 
+  margin: 5px;
 }
 
 .devicename{
@@ -97,23 +103,78 @@ div[data-toggle]{
 .devicename h3{
   padding: 2px;
   color: #FFFFFF;
+
 }
 
 .devicename h3 small{
   color: #FFFFFF;
+  font-weight: bold;
 }
 
 .devicestatus{
   margin: 5px;
+}
 
+.devicestatus span{
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 .devicecontrol{
+  margin-top: 10px;
+  text-align: center;
+}
 
+.devicecontrol .input-group{
+  width: 70%;
+}
 
+.devicecontrol #mode{
+  margin-top: 5px;
+}
+
+/* SYSVARS */
+
+.sysvar{
+  background-color: rgb(91, 91, 91);
+  display: block;
+  padding: 10px;
+  min-height: 63px;
+  margin: 5px;
+}
+
+.sysvarname{
+  border: 1px transparent solid;
+  margin: 5px;
+  background-color: #5b5b5b;
+  color: #FFFFFF;
+}
+
+.sysvarname img{
+    margin-right: 5px;
+}
+
+.sysvarname h3{
+  padding: 2px;
+  color: #FFFFFF;
 
 }
 
+.sysvarname h3 small{
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.sysvarstatus{
+  margin: 5px;
+
+}
+
+.sysvarcontrol{
+  margin-top: 10px;
+  text-align: center;
+}
 
 /* FONT */
 h3, h4{

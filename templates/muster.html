@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- SIDEBAR navigation for lager Screens -->
+    <div class="sidebar hidden-xs">
+      <nav class="navbar navbar-default navbar-left" role="navigation">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><img src="../static/icons/control_home.png" alt="home"></a></li>
+            <li><div class="nav-divider"></div></li>
+            <li><a href="#"><img src="../static/icons/sani_heating.png" alt="Heizung"></a></li>
+            <li><a href="#"><img src="../static/icons/fts_window_1w.png" alt="Fenster"></a></li>
+            <li><div class="nav-divider"></div></li>
+            <li><a href="#"><img src="../static/icons/control_clear.png" alt="SysVars"></a></li>
+          </ul>
+
+      </nav>
+    </div>
+    <!-- Collapsing top Navbar for small screens -->
+    <div class="hidden-sm hidden-md hidden-lg">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">WebView</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#"><img src="../static/icons/control_home.png" alt="home"><span>Home</span></a></li>
+              <li><div class="nav-divider"></div></li>
+              <li><a href="#"><img src="../static/icons/sani_heating.png" alt="Heizung"><span>Heizung</span></a></li>
+              <li><a href="#"><img src="../static/icons/fts_window_1w.png" alt="Fenster"><span>Fenster</span></a></li>
+              <li><div class="nav-divider"></div></li>
+              <li><a href="#"><img src="../static/icons/control_clear.png" alt="SysVars"><span>Systemvariabeln</span></a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="container-fluid">
+      <div class="row">
+        <fieldset>
+          <legend><h1><small>Kategorie</small></h1></legend> <!-- Name of category -->
+          <!-- Controlable HM-Device -->
+          <div class="col-sm-5 device">
+            <div data-toggle="collapse" data-target="#devicecontrol">
+              <!-- DEVICEICON / DEVICENAME -->
+              <div class="devicename pull-left">
+                <h3><img src="../static/icons/sani_heating.png" alt=""><small>Wohnzimmer</small></h3>
+              </div>
+              <!-- Actual status of device -->
+              <div class="devicestatus pull-right">
+                <span><img src="../static/icons/fts_window_1w_open.png" alt=""></span>
+                <span>20°C</span>
+                <span>50%</span>
+                <span>22°C</span>
+                <span>AUTO</span>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <!-- Control of device -->
+            <div class="collapse devicecontrol" id="devicecontrol">
+              <div class="input-group pull-left" id="temp">
+                <input min="4.5" max="30.5" class="form-control" placeholder="Zahl eingeben" type="number">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary set" data-datapoint="4" data-set-id="1385" data-set-value="">OK</button>
+                </span>
+              </div>
+              <div class="btn-group pull-right" id="comforteco">
+                <button type="button" class="btn btn-primary"><img src="../static/icons/sani_heating_temp.png" alt="Comfort"></button>
+                <button type="button" class="btn btn-primary"><img src="../static/icons/sani_cooling_temp.png" alt="Eco"></button>
+              </div>
+              <div class="btn-group" id="mode">
+                <button type="button" class="btn btn-primary"><img src="../static/icons/sani_heating_automatic.png" alt=""></button>
+                <button type="button" class="btn btn-primary"><img src="../static/icons/sani_heating_manual.png" alt=""></button>
+                <button type="button" class="btn btn-primary"><img src="../static/icons/scene_party.png" alt=""></button>
+              </div>
+            </div>
+          </div>
+          <!-- SysVar -->
+          <div class="col-sm-5 sysvar">
+            <div data-toggle="collapse" data-target="#sysvarcontrol">
+              <!-- Icon / name -->
+              <div class="sysvarname pull-left">
+                <h3><img src="../static/icons/sani_heating.png" alt=""><small>Wohnzimmer</small></h3>
+              </div>
+              <!-- Actual status of sysvar -->
+              <div class="sysvarstatus pull-right">
+                <button type="button" class="btn btn-success">Success</button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <!-- Control of sysvar -->
+            <div class="collapse sysvarcontrol" id="sysvarcontrol">
+              <div class="btn-group " id="mode">
+                <button type="button" class="btn btn-primary">bli</button>
+                <button type="button" class="btn btn-primary">bla</button>
+                <button type="button" class="btn btn-primary">blubb</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div> <!-- /.row -->
+
+
+
+    </div> <!-- /.container-fluid -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../static/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../static/js/bootstrap.min.js"></script>
+  </body>
+</html>

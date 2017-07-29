@@ -1,0 +1,21 @@
+{
+  "Home": {
+    "display_name": "HOME",
+    "display_image": "icons/control_home.png",
+    "divider": "true",
+    "subcategories": [
+      "Wetter",
+      "Sicherheit",
+      "Info"
+    ]
+  },
+  "Heizung": {
+    "display_name": "Heizung",
+    "display_image": "icons/sani_heating.png",
+    "subcategories": [
+      "Zimmer",
+      "Bäder",
+      "Gäste"
+    ]
+  }
+}

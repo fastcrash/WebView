@@ -1,0 +1,60 @@
+<!-- SIDEBAR navigation for lager Screens -->
+<div class="sidebar hidden-xs">
+  <nav class="navbar navbar-default navbar-left" role="navigation">
+      <ul class="nav navbar-nav">
+        {% for key, cat in categories.items() %}
+          {% if key == categorie %}
+            <li class="active">
+              <a href="Http://localhost:5000/{{key}}"><img src="../static/{{cat.display_image}}"></a>
+            </li>
+          {% else %}
+            <li>
+              <a href="Http://localhost:5000/{{key}}"><img src="../static/{{cat.display_image}}"></a>
+            </li>
+          {% endif %}
+
+          {% if cat.divider == "true" %}
+            <li><div class="nav-divider"></div></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+  </nav>
+</div>
+<!-- Collapsing top Navbar for small screens -->
+<div class="hidden-sm hidden-md hidden-lg">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebView</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav">
+          {% for key, cat in categories.items() %}
+            {% if key == categorie %}
+              <li class="active">
+                <a href="Http://localhost:5000/{{key}}"><img src="../static/{{cat.display_image}}"></a>
+              </li>
+            {% else %}
+              <li>
+                <a href="Http://localhost:5000/{{key}}"><img src="../static/{{cat.display_image}}"></a>
+              </li>
+            {% endif %}
+
+            {% if cat.divider == "true" %}
+              <li><div class="nav-divider"></div></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
