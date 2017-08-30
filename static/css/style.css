@@ -3,6 +3,11 @@ body{
   background-color: #212121;
 }
 
+.container-fluid{
+  margin-left: 95px;
+}
+
+
 /* SIDEBAR */
 .sidebar{
   float: left !important;

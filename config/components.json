@@ -1,10 +1,17 @@
 {
-  "Zimmer": {
-    "ise_id": "1234",
-    "display_name": "Wohnzimmer",
-    "datapoints": [
-      "3456",
-      "7890"
-    ]
-  }
+  "Zimmer": [
+    {
+      "ise_id": "11068",
+      "display_name": "Arbeitszimmer Heizungg GRP",
+      "datapoints": [
+        "10131",
+        "10130"
+      ]
+    },
+    {
+      "ise_id": "1728",
+      "display_name": "Anwesenheit Robert",
+      
+    }
+  ]
 }

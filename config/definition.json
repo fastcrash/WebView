@@ -1,0 +1,19 @@
+{
+  "sysvar": {
+    "types": []
+  },
+  "program": {},
+  "HM-CC-VG-1": {
+    "dp_view": [
+      "ACTUAL_HUMIDITY",
+      "ACTUAL_TEMPERATURE",
+      "CONTROL_MODE"
+    ],
+    "dp_set": [
+      "SET_TEMPERATURE",
+      "MANU_MODE",
+      "COMFORT_MODE",
+      "AUTO_MODE"
+    ]
+  }
+}
